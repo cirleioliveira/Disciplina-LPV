@@ -1,0 +1,42 @@
+unit UConsultaColetaneas;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, Buttons, Grids, DBGrids, StdCtrls, DB, ADODB;
+
+type
+  TFormConsColetaneas = class(TForm)
+    DataSourceColetaneas: TDataSource;
+    QueryColetaneas: TADOQuery;
+    QueryColetaneasIDCOLETANEA: TIntegerField;
+    QueryColetaneasNOME: TStringField;
+    QueryColetaneasDATACOLETANEA: TDateTimeField;
+    GrupoLista: TGroupBox;
+    DBGrid1: TDBGrid;
+    BConsulta: TSpeedButton;
+    BSair: TSpeedButton;
+    GroupBoxConsulta: TGroupBox;
+    Label1: TLabel;
+    CampoNome: TEdit;
+    procedure BSairClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormConsColetaneas: TFormConsColetaneas;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFormConsColetaneas.BSairClick(Sender: TObject);
+begin
+  close;
+end;
+
+end.

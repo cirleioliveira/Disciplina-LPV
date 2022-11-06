@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/05/14 23:05:34.673.bdsproj,C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\Project1.bdsproj=C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\Project1.bdsproj</Transaction>
+    <Transaction>2021/07/25 00:11:04.119.pas,C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\Unit1.pas=C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\201421640009 - Cirlei (Att3) modelo 2\tentativa 1\UPrincipal.pas</Transaction>
+    <Transaction>2021/07/25 00:11:04.119.dfm,C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\Unit1.dfm=C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\201421640009 - Cirlei (Att3) modelo 2\tentativa 1\UPrincipal.dfm</Transaction>
+    <Transaction>2021/07/25 00:12:27.696.pas,C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\Unit5.pas=C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\201421640009 - Cirlei (Att3) modelo 2\tentativa 1\UColetaneaMusicas.pas</Transaction>
+    <Transaction>2021/07/25 00:12:27.696.dfm,C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\Unit5.dfm=C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\201421640009 - Cirlei (Att3) modelo 2\tentativa 1\UColetaneaMusicas.dfm</Transaction>
+    <Transaction>2021/07/25 00:12:45.805.pas,C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\Unit4.pas=C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\201421640009 - Cirlei (Att3) modelo 2\tentativa 1\UGeneros.pas</Transaction>
+    <Transaction>2021/07/25 00:12:45.805.dfm,C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\Unit4.dfm=C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\201421640009 - Cirlei (Att3) modelo 2\tentativa 1\UGeneros.dfm</Transaction>
+    <Transaction>2021/07/25 00:13:02.468.pas,C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\Unit3.pas=C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\201421640009 - Cirlei (Att3) modelo 2\tentativa 1\UMusicas.pas</Transaction>
+    <Transaction>2021/07/25 00:13:02.468.dfm,C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\Unit3.dfm=C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\201421640009 - Cirlei (Att3) modelo 2\tentativa 1\UMusicas.dfm</Transaction>
+    <Transaction>2021/07/25 00:13:11.327.pas,C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\Unit2.pas=C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\201421640009 - Cirlei (Att3) modelo 2\tentativa 1\UColetaneas.pas</Transaction>
+    <Transaction>2021/07/25 00:13:11.327.dfm,C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\Unit2.dfm=C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\201421640009 - Cirlei (Att3) modelo 2\tentativa 1\UColetaneas.dfm</Transaction>
+    <Transaction>2021/07/25 00:13:38.571.bdsproj,C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\Project1.bdsproj=C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\201421640009 - Cirlei (Att3) modelo 2\tentativa 1\FrontEnd_Att3.bdsproj</Transaction>
+    <Transaction>2021/07/25 16:48:00.293.pas,C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\201421640009 - Cirlei (Att3) modelo 2\tentativa 1\Unit1.pas=C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\201421640009 - Cirlei (Att3) modelo 2\tentativa 1\UConsultaMusicas.pas</Transaction>
+    <Transaction>2021/07/25 16:48:00.294.dfm,C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\201421640009 - Cirlei (Att3) modelo 2\tentativa 1\Unit1.dfm=C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\201421640009 - Cirlei (Att3) modelo 2\tentativa 1\UConsultaMusicas.dfm</Transaction>
+    <Transaction>2021/07/25 16:48:46.873.pas,C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\201421640009 - Cirlei (Att3) modelo 2\tentativa 1\Unit1.pas=C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\201421640009 - Cirlei (Att3) modelo 2\tentativa 1\UConsultaColetaneas.pas</Transaction>
+    <Transaction>2021/07/25 16:48:46.873.dfm,C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\201421640009 - Cirlei (Att3) modelo 2\tentativa 1\Unit1.dfm=C:\Users\shirl\OneDrive\Documentos\Borland Studio Projects\201421640009 - Cirlei (Att3) modelo 2\tentativa 1\UConsultaColetaneas.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

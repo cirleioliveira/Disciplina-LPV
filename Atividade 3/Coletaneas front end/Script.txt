@@ -1,0 +1,50 @@
+connect system/abc
+
+create tablespace Dados datafile 'c:\oraclexe\DADOS.ora' size 5m;
+
+CREATE USER Aval3 identified by abc default tablespace dados;
+GRANT dba to Aval3;
+connect Aval3 /abc;
+
+CREATE TABLE coletaneamusicas (
+    idcoletanea NUMBER(5) NOT NULL,
+    idmusica    NUMBER(3) NOT NULL);
+
+CREATE TABLE coletaneas (
+    idcoletanea   NUMBER(5) NOT NULL,
+    datacoletanea DATE NOT NULL,
+    nome          VARCHAR2(30) NOT NULL);
+
+ALTER TABLE coletaneas ADD CONSTRAINT coletaneas_pk PRIMARY KEY ( idcoletanea );
+
+CREATE TABLE generos (
+    idgenero  NUMBER(2) NOT NULL,
+    descricao VARCHAR2(25));
+
+ALTER TABLE generos ADD CONSTRAINT generos_pk PRIMARY KEY ( idgenero );
+
+CREATE TABLE musicas (
+    idmusica   NUMBER(3) NOT NULL,
+    idgenero   NUMBER(2) NOT NULL,
+    nomemusica VARCHAR2(40) NOT NULL,
+    duracao    NUMBER(6, 2) NOT NULL);
+
+ALTER TABLE musicas ADD CONSTRAINT musicas_pk PRIMARY KEY ( idmusica );
+
+ALTER TABLE coletaneamusicas
+    ADD CONSTRAINT coletaneamusicas_coletaneas_fk FOREIGN KEY ( idcoletanea )
+        REFERENCES coletaneas ( idcoletanea );
+
+ALTER TABLE coletaneamusicas
+    ADD CONSTRAINT coletaneamusicas_musicas_fk FOREIGN KEY ( idmusica )
+        REFERENCES musicas ( idmusica );
+
+ALTER TABLE musicas
+    ADD CONSTRAINT musicas_generos_fk FOREIGN KEY ( idgenero )
+        REFERENCES generos ( idgenero );
+
+
+INSERT INTO generos(idgenero, descricao) VALUES (1, 'Gospel');
+INSERT INTO generos(idgenero, descricao) VALUES (2, 'Hip hop');
+INSERT INTO generos(idgenero, descricao) VALUES (3, 'Sertanejo');
+

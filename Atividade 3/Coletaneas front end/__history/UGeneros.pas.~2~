@@ -1,0 +1,24 @@
+unit UGeneros;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs;
+
+type
+  TFormGenero = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormGenero: TFormGenero;
+
+implementation
+
+{$R *.dfm}
+
+end.

@@ -1,0 +1,44 @@
+unit UPrincipal;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, Menus;
+
+type
+  TFormPrinccipal = class(TForm)
+    Menu: TMainMenu;
+    AtividadeIII1: TMenuItem;
+    Musicas1: TMenuItem;
+    Coletaneas1: TMenuItem;
+    Generos1: TMenuItem;
+    ColetaneasMusicas1: TMenuItem;
+    Sair1: TMenuItem;
+    procedure Musicas1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormPrinccipal: TFormPrinccipal;
+
+implementation
+
+uses UColetaneaMusicas, UColetaneas, UGeneros, UMusicas;
+
+{$R *.dfm}
+
+procedure TFormPrinccipal.Musicas1Click(Sender: TObject);
+begin
+  try
+    FormMusic:= TFormMusic.create(application);
+    FormMusic.ShowModal;
+  finally
+    FormMusic.free;
+  end;
+end;
+
+end.

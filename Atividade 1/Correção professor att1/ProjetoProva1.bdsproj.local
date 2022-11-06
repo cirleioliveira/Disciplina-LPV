@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/05/14 15:05:55.623.pas,D:\Documents\Borland Studio Projects\Unit1.pas=D:\Projetos\Aula1\Exerc1.pas</Transaction>
+    <Transaction>2021/05/14 15:05:55.623.dfm,D:\Documents\Borland Studio Projects\Unit1.dfm=D:\Projetos\Aula1\Exerc1.dfm</Transaction>
+    <Transaction>2021/05/14 15:06:51.312.bdsproj,D:\Documents\Borland Studio Projects\Project1.bdsproj=D:\Projetos\Aula1\Projeto1.bdsproj</Transaction>
+    <Transaction>2021/05/14 16:41:52.511.pas,D:\Projetos\Aula1\Unit1.pas=D:\Projetos\Aula1\Q1.pas</Transaction>
+    <Transaction>2021/05/14 16:41:52.512.dfm,D:\Projetos\Aula1\Unit1.dfm=D:\Projetos\Aula1\Q1.dfm</Transaction>
+    <Transaction>2021/05/14 17:59:49.079.pas,D:\Projetos\Aula1\Unit1.pas=D:\Projetos\Aula1\UQ2.pas</Transaction>
+    <Transaction>2021/05/14 17:59:49.079.dfm,D:\Projetos\Aula1\Unit1.dfm=D:\Projetos\Aula1\UQ2.dfm</Transaction>
+    <Transaction>2021/05/14 18:00:02.780.pas,D:\Projetos\Aula1\Q1.pas=D:\Projetos\Aula1\UQ1.pas</Transaction>
+    <Transaction>2021/05/14 18:00:02.780.dfm,D:\Projetos\Aula1\Q1.dfm=D:\Projetos\Aula1\UQ1.dfm</Transaction>
+    <Transaction>2021/05/14 18:00:24.277.pas,D:\Projetos\Aula1\Unit2.pas=D:\Projetos\Aula1\UQ3.pas</Transaction>
+    <Transaction>2021/05/14 18:00:24.277.dfm,D:\Projetos\Aula1\Unit2.dfm=D:\Projetos\Aula1\UQ3.dfm</Transaction>
+    <Transaction>2021/05/14 18:14:26.457.pas,D:\Projetos\Aula1\UQ3.pas=</Transaction>
+    <Transaction>2021/05/14 18:14:26.457.dfm,D:\Projetos\Aula1\UQ3.dfm=</Transaction>
+    <Transaction>2021/05/14 18:17:13.329.pas,D:\Projetos\Aula1\UQ1.pas=D:\Projetos\Aula1\Q1.pas</Transaction>
+    <Transaction>2021/05/14 18:17:13.329.dfm,D:\Projetos\Aula1\UQ1.dfm=D:\Projetos\Aula1\Q1.dfm</Transaction>
+    <Transaction>2021/05/14 18:17:25.196.pas,D:\Projetos\Aula1\UQ2.pas=D:\Projetos\Aula1\Q2.pas</Transaction>
+    <Transaction>2021/05/14 18:17:25.196.dfm,D:\Projetos\Aula1\UQ2.dfm=D:\Projetos\Aula1\Q2.dfm</Transaction>
+    <Transaction>2021/05/14 18:19:02.091.pas,D:\Projetos\Aula1\Unit1.pas=D:\Projetos\Aula1\Q3.pas</Transaction>
+    <Transaction>2021/05/14 18:19:02.091.dfm,D:\Projetos\Aula1\Unit1.dfm=D:\Projetos\Aula1\Q3.dfm</Transaction>
+    <Transaction>2021/05/15 09:46:44.823.pas,D:\Projetos\Aula1\Q2.pas=</Transaction>
+    <Transaction>2021/05/15 09:46:44.824.dfm,D:\Projetos\Aula1\Q2.dfm=</Transaction>
+    <Transaction>2021/05/15 09:48:45.867.pas,D:\Projetos\Aula1\Unit1.pas=D:\Projetos\Aula1\Q2.pas</Transaction>
+    <Transaction>2021/05/15 09:48:45.867.dfm,D:\Projetos\Aula1\Unit1.dfm=D:\Projetos\Aula1\Q2.dfm</Transaction>
+    <Transaction>2021/05/15 22:27:34.568.pas,D:\Projetos\Aula1\Exerc1.pas=D:\Projetos\Aula1\Prova1.pas</Transaction>
+    <Transaction>2021/05/15 22:27:34.568.dfm,D:\Projetos\Aula1\Exerc1.dfm=D:\Projetos\Aula1\Prova1.dfm</Transaction>
+    <Transaction>2021/05/15 22:28:16.994.bdsproj,D:\Projetos\Aula1\Projeto1.bdsproj=D:\Projetos\Aula1\ProjetoProva1.bdsproj</Transaction>
+  </Transactions>
+</BorlandProject>

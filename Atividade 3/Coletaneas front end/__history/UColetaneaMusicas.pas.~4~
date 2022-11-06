@@ -1,0 +1,27 @@
+unit UColetaneaMusicas;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, DB, ADODB;
+
+type
+  TFormColMusic = class(TForm)
+    QueryColMusic: TADOQuery;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormColMusic: TFormColMusic;
+
+implementation
+
+uses UPrincipal;
+
+{$R *.dfm}
+
+end.

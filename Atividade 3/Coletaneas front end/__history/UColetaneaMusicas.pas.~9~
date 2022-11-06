@@ -1,0 +1,74 @@
+unit UColetaneaMusicas;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, DB, ADODB, Grids, DBGrids, StdCtrls, Mask, DBCtrls, Buttons;
+
+type
+  TFormColMusic = class(TForm)
+    QueryColMusic: TADOQuery;
+    QueryColMusicIDCOLETANEA: TIntegerField;
+    QueryColMusicIDMUSICA: TIntegerField;
+    BNovo: TSpeedButton;
+    BEditar: TSpeedButton;
+    BExcluir: TSpeedButton;
+    BConfirmar: TSpeedButton;
+    BCancelar: TSpeedButton;
+    BSair: TSpeedButton;
+    GrupoDados: TGroupBox;
+    Label1: TLabel;
+    Label2: TLabel;
+    DBEdit1: TDBEdit;
+    DBEdit2: TDBEdit;
+    GrupoLista: TGroupBox;
+    DBGrid1: TDBGrid;
+    QueryColetaneas: TADOQuery;
+    QueryMusicas: TADOQuery;
+    QueryColetaneasIDCOLETANEA: TIntegerField;
+    QueryColetaneasDATACOLETANEA: TDateTimeField;
+    QueryColetaneasNOME: TStringField;
+    QueryMusicasIDMUSICA: TIntegerField;
+    QueryMusicasIDGENERO: TIntegerField;
+    QueryMusicasNOMEMUSICA: TStringField;
+    QueryMusicasDURACAO: TBCDField;
+    QueryColMusicLook_Coletaneas: TStringField;
+    Label3: TLabel;
+    DBLookupComboBox1: TDBLookupComboBox;
+    DataSource1: TDataSource;
+    procedure BSairClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    procedure botoes(acao: Boolean);
+  end;
+
+var
+  FormColMusic: TFormColMusic;
+
+implementation
+
+uses UPrincipal;
+
+{$R *.dfm}
+
+procedure TFormColMusic.botoes(acao: Boolean);
+begin
+  BNovo       .Enabled:=acao;
+  BEditar     .Enabled:=acao;
+  BExcluir    .Enabled:=acao;
+  BConfirmar  .Enabled:= not acao;
+  BCancelar   .Enabled:=not acao;
+  BSair       .Enabled:=acao;
+  GrupoDados  .Enabled:= not acao;
+  GrupoLista  .Enabled:= not acao;
+end;
+
+procedure TFormColMusic.BSairClick(Sender: TObject);
+begin
+  close;
+end;
+
+end.

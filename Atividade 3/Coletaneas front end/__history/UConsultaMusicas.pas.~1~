@@ -1,0 +1,24 @@
+unit UConsultaMusicas;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs;
+
+type
+  TFormConsultamusicas = class(TForm)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormConsultamusicas: TFormConsultamusicas;
+
+implementation
+
+{$R *.dfm}
+
+end.

@@ -1,0 +1,219 @@
+object FormColetaneas: TFormColetaneas
+  Left = 0
+  Top = 0
+  Caption = 'Coletaneas'
+  ClientHeight = 438
+  ClientWidth = 637
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object BNovo: TSpeedButton
+    Left = 18
+    Top = 376
+    Width = 73
+    Height = 33
+    Caption = 'Novo'
+    OnClick = BNovoClick
+  end
+  object BEditar: TSpeedButton
+    Left = 106
+    Top = 376
+    Width = 73
+    Height = 33
+    Caption = 'Editar'
+    OnClick = BEditarClick
+  end
+  object BExcluir: TSpeedButton
+    Left = 192
+    Top = 376
+    Width = 73
+    Height = 33
+    Caption = 'Excluir'
+    OnClick = BExcluirClick
+  end
+  object BConfirmar: TSpeedButton
+    Left = 368
+    Top = 376
+    Width = 73
+    Height = 33
+    Caption = 'Confirmar'
+    Enabled = False
+    OnClick = BConfirmarClick
+  end
+  object BCancelar: TSpeedButton
+    Left = 456
+    Top = 376
+    Width = 73
+    Height = 33
+    Caption = 'Cancelar'
+    Enabled = False
+    OnClick = BCancelarClick
+  end
+  object BSair: TSpeedButton
+    Left = 542
+    Top = 376
+    Width = 73
+    Height = 33
+    Caption = 'Sair'
+    OnClick = BSairClick
+  end
+  object GrupoDados: TGroupBox
+    Left = 16
+    Top = 264
+    Width = 601
+    Height = 89
+    Caption = 'Dados'
+    Enabled = False
+    TabOrder = 0
+    object TLabel
+      Left = 16
+      Top = 24
+      Width = 3
+      Height = 13
+    end
+    object Label1: TLabel
+      Left = 16
+      Top = 24
+      Width = 33
+      Height = 13
+      Caption = 'C'#243'digo'
+    end
+    object Label2: TLabel
+      Left = 152
+      Top = 24
+      Width = 27
+      Height = 13
+      Caption = 'Nome'
+    end
+    object Label3: TLabel
+      Left = 456
+      Top = 24
+      Width = 23
+      Height = 13
+      Caption = 'Data'
+    end
+    object DBEdit1: TDBEdit
+      Left = 16
+      Top = 40
+      Width = 121
+      Height = 21
+      DataField = 'IDCOLETANEA'
+      DataSource = DataSourceColetaneas
+      TabOrder = 0
+    end
+    object DBEdit2: TDBEdit
+      Left = 152
+      Top = 40
+      Width = 289
+      Height = 21
+      DataField = 'NOME'
+      DataSource = DataSourceColetaneas
+      TabOrder = 1
+    end
+    object DBEdit3: TDBEdit
+      Left = 456
+      Top = 40
+      Width = 121
+      Height = 21
+      DataField = 'DATACOLETANEA'
+      DataSource = DataSourceColetaneas
+      TabOrder = 2
+    end
+  end
+  object GrupoLista: TGroupBox
+    Left = 16
+    Top = 8
+    Width = 601
+    Height = 241
+    Caption = 'Lista de dados cadastrados'
+    TabOrder = 1
+    object DBGrid1: TDBGrid
+      Left = 2
+      Top = 15
+      Width = 597
+      Height = 224
+      Align = alClient
+      DataSource = DataSourceColetaneas
+      Options = [dgTitles, dgColumnResize, dgColLines, dgRowLines, dgTabs, dgRowSelect, dgAlwaysShowSelection, dgConfirmDelete, dgCancelOnExit]
+      TabOrder = 0
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+      TitleFont.Style = []
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'IDCOLETANEA'
+          Title.Caption = 'C'#243'digo'
+          Title.Color = clInactiveCaption
+          Title.Font.Charset = DEFAULT_CHARSET
+          Title.Font.Color = clBlack
+          Title.Font.Height = -13
+          Title.Font.Name = 'Tahoma'
+          Title.Font.Style = []
+          Width = 84
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'NOME'
+          Title.Caption = 'Nome'
+          Title.Color = clInactiveCaption
+          Title.Font.Charset = DEFAULT_CHARSET
+          Title.Font.Color = clBlack
+          Title.Font.Height = -13
+          Title.Font.Name = 'Tahoma'
+          Title.Font.Style = []
+          Width = 359
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'DATACOLETANEA'
+          Title.Caption = 'Data'
+          Title.Color = clInactiveCaption
+          Title.Font.Charset = DEFAULT_CHARSET
+          Title.Font.Color = clBlack
+          Title.Font.Height = -13
+          Title.Font.Name = 'Tahoma'
+          Title.Font.Style = []
+          Width = 131
+          Visible = True
+        end>
+    end
+  end
+  object QueryColetaneas: TADOQuery
+    Active = True
+    Connection = FormPrinccipal.conexao
+    CursorType = ctStatic
+    Parameters = <>
+    SQL.Strings = (
+      'select * from Aval3.coletaneas')
+    Left = 280
+    Top = 376
+    object QueryColetaneasIDCOLETANEA: TIntegerField
+      FieldName = 'IDCOLETANEA'
+    end
+    object QueryColetaneasNOME: TStringField
+      Alignment = taRightJustify
+      FieldName = 'NOME'
+      Size = 30
+    end
+    object QueryColetaneasDATACOLETANEA: TDateTimeField
+      Alignment = taRightJustify
+      FieldName = 'DATACOLETANEA'
+    end
+  end
+  object DataSourceColetaneas: TDataSource
+    DataSet = QueryColetaneas
+    Left = 328
+    Top = 376
+  end
+end

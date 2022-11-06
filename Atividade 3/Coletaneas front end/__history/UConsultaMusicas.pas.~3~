@@ -1,0 +1,40 @@
+unit UConsultaMusicas;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, Buttons, DB, ADODB, Grids, DBGrids, StdCtrls;
+
+type
+  TFormConsultamusicas = class(TForm)
+    GrupoLista: TGroupBox;
+    DBGrid1: TDBGrid;
+    QueryMusicas: TADOQuery;
+    QueryMusicasIDMUSICA: TIntegerField;
+    QueryMusicasIDGENERO: TIntegerField;
+    QueryMusicasNOMEMUSICA: TStringField;
+    QueryMusicasDURACAO: TBCDField;
+    QueryMusicasLook_Generos: TStringField;
+    QueryGerenos: TADOQuery;
+    QueryGerenosIDGENERO: TIntegerField;
+    QueryGerenosDESCRICAO: TStringField;
+    DataSourceMusicas: TDataSource;
+    BConsultar: TSpeedButton;
+    BSair: TSpeedButton;
+    GroupBox1: TGroupBox;
+    Edit1: TEdit;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormConsultamusicas: TFormConsultamusicas;
+
+implementation
+
+{$R *.dfm}
+
+end.

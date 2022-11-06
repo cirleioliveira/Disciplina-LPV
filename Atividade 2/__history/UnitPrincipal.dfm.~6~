@@ -1,0 +1,39 @@
+object FormPrincipal: TFormPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Atividade II'
+  ClientHeight = 201
+  ClientWidth = 447
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object MainMenu1: TMainMenu
+    Left = 152
+    Top = 72
+    object AtividadeII1: TMenuItem
+      Caption = 'Atividade II'
+      object Exercicio11: TMenuItem
+        Caption = 'Exercicio 1'
+        OnClick = Exercicio11Click
+      end
+      object Exercicio21: TMenuItem
+        Caption = 'Exercicio 2'
+      end
+      object Sair2: TMenuItem
+        Caption = 'Sair'
+        OnClick = Sair2Click
+      end
+    end
+    object Sair1: TMenuItem
+      Caption = 'Sair'
+      OnClick = Sair1Click
+    end
+  end
+end

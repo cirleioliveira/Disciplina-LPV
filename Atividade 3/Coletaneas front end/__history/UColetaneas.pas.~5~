@@ -1,0 +1,27 @@
+unit UColetaneas;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, DB, ADODB;
+
+type
+  TFormColetaneas = class(TForm)
+    QueryColetaneas: TADOQuery;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormColetaneas: TFormColetaneas;
+
+implementation
+
+uses UPrincipal;
+
+{$R *.dfm}
+
+end.

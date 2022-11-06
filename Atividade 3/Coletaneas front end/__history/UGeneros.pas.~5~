@@ -1,0 +1,29 @@
+unit UGeneros;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, DB, ADODB;
+
+type
+  TFormGenero = class(TForm)
+    QueryGeneros: TADOQuery;
+    QueryGenerosIDGENERO: TIntegerField;
+    QueryGenerosDESCRICAO: TStringField;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormGenero: TFormGenero;
+
+implementation
+
+uses UPrincipal;
+
+{$R *.dfm}
+
+end.

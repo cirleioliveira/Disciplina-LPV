@@ -1,0 +1,55 @@
+unit UColetaneas;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, DB, ADODB, Buttons, Grids, DBGrids, StdCtrls, Mask, DBCtrls;
+
+type
+  TFormColetaneas = class(TForm)
+    QueryColetaneas: TADOQuery;
+    QueryColetaneasIDCOLETANEA: TIntegerField;
+    QueryColetaneasDATACOLETANEA: TDateTimeField;
+    QueryColetaneasNOME: TStringField;
+    DBEdit1: TDBEdit;
+    DBEdit2: TDBEdit;
+    DBEdit3: TDBEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    DataSourceColetaneas: TDataSource;
+    DBGrid1: TDBGrid;
+    BNovo: TSpeedButton;
+    BEditar: TSpeedButton;
+    BExcluir: TSpeedButton;
+    BConfirmar: TSpeedButton;
+    BCancelar: TSpeedButton;
+    BSair: TSpeedButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    procedure botoes(acao:boolean);
+  end;
+
+var
+  FormColetaneas: TFormColetaneas;
+
+implementation
+
+uses UPrincipal;
+
+{$R *.dfm}
+
+procedure TFormColetaneas.botoes(acao: Boolean);
+begin
+  BNovo       .Enabled:=acao;
+  BEditar     .Enabled:=acao;
+  BExcluir    .Enabled:=acao;
+  BConfirmar  .Enabled:= not acao;
+  BCancelar   .Enabled:=not acao;
+  BSair       .Enabled:=acao;
+end;
+
+end.
